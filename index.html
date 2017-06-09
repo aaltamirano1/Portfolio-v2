@@ -1,0 +1,69 @@
+<!doctype html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <title>Angel Altamirano Portfolio</title>
+      <link rel="stylesheet" href="style.css">
+      <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    </head>
+    <body ng-app='portfolioApp'>
+      <div class='header'>
+        <h1>Angel Altamirano</h1>
+        <ul class='menu'>
+          <li ng-click='aboutSelected=true; portfolioSelected=false; contactSelected=false'>About</li>
+          <li ng-click='portfolioSelected=true; aboutSelected=false; contactSelected=false'>Portfolio</li>
+          <li ng-click='contactSelected=true; aboutSelected=false; portfolioSelected=false'>Contact</li>
+        </ul>
+      </div><!--end header-->
+      <div class='container' id='about' ng-show='aboutSelected'>
+        <div class='infoBox'>
+          <h2>About</h2>
+          <h3>Hello there, I'm a Georgia State University graduate with a BA in accounting and currently working towards becoming a web developer. Feel free to check out my profile at <a target="_blank" id="treehouse" href="https://teamtreehouse.com/angelaltamirano">Treehouse</a> for a look at my coursework. Below are some skills I've been working on. Pleased to meet you! </h3>
+          <div class='skillBox'>
+            <img src='https://cdn4.iconfinder.com/data/icons/scripting-and-programming-languages/512/js-48.png' alt='javascript'>
+            <img src='https://cdn4.iconfinder.com/data/icons/scripting-and-programming-languages/512/JQuery_logo-128.png' alt='jquery'>
+            <img src='http://findicons.com/files/icons/2773/pictonic_free/64/angularjs.png' alt='angularjs'>
+            <img src='https://cdn2.iconfinder.com/data/icons/font-awesome/1792/git-square-64.png' alt='git'>
+          </div><!--end skillBox-->
+        </div><!--end infoBox-->
+        <img id='profilePic' src="https://i.imgbox.com/ypspBRKZ.png" alt="Profile Pic"/>
+     </div><!--end about-->
+      <div class='container' id='portfolio' ng-show='portfolioSelected'>
+        <h2>Portfolio</h2>
+        <div class='picBox'>
+          <a href="https://codepen.io/aaltamirano1/full/xRdoxP/">
+            <img caption="AM Album Page"class="img-border" src="https://i.imgbox.com/sqiYQXQZ.png">
+          </a>
+          <a href="https://aaltamirano1.github.io/Magic-8Ball/">
+            <img caption="Magic 8Ball Page"class="img-border" src="https://i.imgbox.com/pOJDJcfm.png">
+          </a>
+          <a href="https://aaltamirano1.github.io/Flickr-API/">
+            <img caption="Flickr API Page"class="img-border" src="https://i.imgbox.com/fhWoloXm.png">
+          </a>
+          <a href="https://aaltamirano1.github.io/Guest-List/">
+            <img caption="Guest List Page"class="img-border" src="https://i.imgbox.com/YrNS6xH6.png">
+          </a>
+        </div><!--end picBox-->
+      </div><!--end portfolio-->
+      <div class='container' id='contact' ng-show='contactSelected'>
+        <h2>Contact</h2>
+        <h3>Helpful advice and resources always appreciated.</h3>
+        <div>
+          <img src='https://cdn1.iconfinder.com/data/icons/black-socicons/512/linkedin-32.png'>
+          <h3 id='linkedIn'>
+            <a href="https://www.linkedin.com/in/angel-altamirano/" target="_top">linked in
+            </a>
+          </h3>
+        </div>
+        <div>
+        <img src='https://cdn1.iconfinder.com/data/icons/free-98-icons/32/email-32.png'id='email'>
+          <h3>
+            <a href="mailto:angel.g.altam@gmail.com?Subject=Hello%20again" target="_top">angel.g.altam@gmail.com
+            </a>
+          </h3>
+        </div>
+      </div><!--end contact-->
+      <script src="angular.js" type="text/javascript"></script>
+      <script src="app.js" type="text/javascript"></script>
+    </body>
+  </html>

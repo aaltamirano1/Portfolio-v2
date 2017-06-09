@@ -1,0 +1,106 @@
+body{
+  margin:0;
+  background-color:#A7DBD8;
+}
+
+ /******* Fonts ******/
+
+h1, h2, h3, p{
+  font-family:'Nunito';
+  color:#7A7D6D;
+}
+
+h1{margin:20px;}
+
+h2{font-size:1.75em;}
+
+h2, .infoBox h3{margin-bottom:0;}
+
+a{
+  text-decoration:none;
+  padding:0;
+  color:#8FBFBC;
+}
+/******* Nav Bar  ******/
+.header{
+  background-color:#E0E4CC;
+  border-bottom:solid #C1C4AF 3px;
+  display:flex;
+  justify-content:space-between;
+  postion:fixed;
+  top:0;
+  left:0;
+}
+
+.menu{display:flex;}
+
+li {
+  list-style:none;
+  margin:20px;
+  font-family:'Nunito';
+  font-weight:bold;
+  color:#7A7D6D;
+}
+
+li:hover{color:#C1C4AF;}
+
+
+.container{
+  background-color:#E0E4CC;
+  border-top:solid #C1C4AF 3px;
+  border-radius:10px;
+  margin:60px 0 0 13%;
+  width: 70%;
+}
+
+/*******  ABOUT  ******/
+#about{
+  display:flex;
+}
+
+.infoBox{display:flex;
+  flex-direction:column;
+  margin-left:5%;}
+
+.skillBox{display:flex;
+  justify-content:space-between;
+  align-items:center;}
+
+.skillBox img{opacity:.5;}
+
+#profilePic{width:150px;
+  height:100%;
+  margin:45px 45px 30px 21px;
+  border-radius:100px;}
+
+/*******  PORTFOLIO  ******/
+#portfolio h2{margin:25px 0 25px 5%;}
+
+.picBox{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-around;
+  width:95%;
+  margin-left:5%;
+}
+.img-border{width:80%;
+  border:solid #7A7D6D;
+  border-radius:3px;
+  margin:auto;
+  margin-bottom:30px;}
+
+/*******  CONTACT  ******/
+#contact{margin-bottom:25px;}
+
+#contact h2, #contact>h3{margin-left:5%;}
+
+#contact div{margin-left:5%;
+  display:flex;
+  align-items:center;
+  margin-top:0;}
+#contact img{
+  opacity:.5;
+  display:inline;
+  margin:5px;
+}
+#linkedIn{margin:0;}
