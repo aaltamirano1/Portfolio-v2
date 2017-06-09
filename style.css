@@ -27,7 +27,6 @@ a{
   border-bottom:solid #C1C4AF 3px;
   display:flex;
   justify-content:space-between;
-  postion:fixed;
   top:0;
   left:0;
 }
@@ -104,3 +103,21 @@ li:hover{color:#C1C4AF;}
   margin:5px;
 }
 #linkedIn{margin:0;}
+
+@media only screen and (max-width: 480px){
+  .header{width:100%;
+    flex-direction:column;
+    align-items:center;
+    margin-bottom:30px;}
+  ul{padding:0;}
+  
+  .container{width:80%;
+    margin:auto;}
+  
+  #profilePic{display:none;}
+  .infoBox{margin:10px;}
+  .skillBox{flex-wrap:wrap;
+    justify-content:center;}
+  .skillBox img{margin:10px;}
+  
+}
